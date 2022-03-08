@@ -1,5 +1,5 @@
 const grpc = require("grpc");
-const proto = grpc.load("../protos/vacaciones.proto");
+const proto = grpc.load("protos/vacaciones.proto");
 const server = new grpc.Server();
 
 server.addService(proto.work_leave.EmployeeLeaveDaysService.service, {
